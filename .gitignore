@@ -1,0 +1,9 @@
+node_modules
+*.log
+logs
+
+# pkg apps
+test-pkg*
+
+# todos
+TODO

@@ -1,0 +1,33 @@
+{
+    "name": "test-pkg",
+    "version": "0.0.1",
+    "private": true,
+    "bin": {
+        "test-pkg": "index.js"
+    },
+    "scripts": {
+        "build:client": "cd client && yarn build",
+        "install:client": "cd client && yarn",
+        "test:client": "cd client && yarn test",
+        "build": "yarn build:client && pkg .",
+        "postinstall": "yarn install:client",
+        "test": "yarn test:client"
+    },
+    "devDependencies": {
+        "pkg": "^4.3.7"
+    },
+    "pkg": {
+        "assets": [
+            "client/build/**/*",
+            "server/views/**/*"
+        ],
+        "targets": [
+            "win"
+        ]
+    },
+    "dependencies": {
+        "express": "^4.16.4",
+        "pug": "^2.0.3",
+        "yargs": "^13.2.2"
+    }
+}
