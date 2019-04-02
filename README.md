@@ -8,10 +8,9 @@ The following list of tasks has been proofed.
 - [x] pack a server application
 - [x] the server application should be able to render/send assets
 - [x] pack a client application
-- [ ] check the pack
-- [ ] try to unpack
-- [ ] check size
-- [ ] list alternatives (like packr - go based...)
+- [x] check the pack
+- [x] try to unpack (assets readable, unimportant...)
+- [x] check size - 34mb (react simple client, express simple server, yargs cli) for win client
 
 ## structure
 
